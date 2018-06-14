@@ -11,6 +11,7 @@ if($_POST["email"] == 'admin@gmail.com'){
 }else{
         echo json_encode(array(
                 "success" => false,
-                "message" => "Username or Password invalid"
+                "message" => "Username or Password invalid",
+                "email" => $_POST["email"]
         ));
 }
